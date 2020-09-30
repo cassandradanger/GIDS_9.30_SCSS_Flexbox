@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './App.css';
+import './App.scss';
 
 class App extends Component {
 
@@ -20,23 +20,26 @@ class App extends Component {
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
             nisi ut aliquip ex ea commodo consequat.
           </div>
-          <div id="form">
-            <label htmlFor="title">Title:</label>
-            <input id="title"></input>
-            <label htmlFor="description">Description:</label>
-            <input id="description"></input>
-            <label htmlFor="image">Image URL:</label>
-            <input id="image"></input>
-            <button>Submit</button>
+          <div id="subMain">
+            <div id="form">
+              <label htmlFor="title">Title:</label>
+              <input id="title"></input>
+              <label htmlFor="description">Description:</label>
+              <input id="description"></input>
+              <label htmlFor="image">Image URL:</label>
+              <input id="image"></input>
+              <button>Submit</button>
+            </div>
+            <ul>
+              <li><img src="http://www.fillmurray.com/200/250" alt="random bill murray"/></li>
+              <li><img src="http://www.fillmurray.com/300/250" alt="random bill murray"/></li>
+              <li><img src="http://www.fillmurray.com/50/50" alt="random bill murray"/></li>
+              <li><img src="http://www.fillmurray.com/200/100" alt="random bill murray"/></li>
+              <li><img src="http://www.fillmurray.com/50/100" alt="random bill murray"/></li>
+              <li><img src="http://www.fillmurray.com/100/100" alt="random bill murray"/></li>
+              
+            </ul>
           </div>
-          <ul>
-            <li><img src="http://www.fillmurray.com/200/250" alt="random bill murray"/></li>
-            <li><img src="http://www.fillmurray.com/300/250" alt="random bill murray"/></li>
-            <li><img src="http://www.fillmurray.com/50/50" alt="random bill murray"/></li>
-            <li><img src="http://www.fillmurray.com/200/100" alt="random bill murray"/></li>
-            <li><img src="http://www.fillmurray.com/50/100" alt="random bill murray"/></li>
-            <li><img src="http://www.fillmurray.com/100/100" alt="random bill murray"/></li>
-          </ul>
           </main>
           <footer id="footer">
             <p id="footerCopy">

@@ -1,10 +1,17 @@
+@import '/index.scss';
+
 main{
   margin: 20px;
 }
 
+#subMain{
+  display: flex;
+  align-items: flex-start;
+}
+
 header{
-  background-color: teal;
-  color: white;
+  background-color: $primary;
+  color: $secondary;
   height: 100px;
   width: 100%;
   padding: 0;
@@ -33,17 +40,11 @@ h1{
 }
 
 ul{
-  /* border: 1px solid black; */
-  width: 45%;
-  display: inline-block;
-  padding: 20px;
-  list-style: none;
-  margin-top: -20px;
+  @include reset-list;
 }
 
 li{
-  display: inline;
-  margin: 10px;
+  @include display-list-items(inline);
 }
 
 li img{
@@ -57,25 +58,23 @@ li img{
 }
 
 #footer{
+  display: flex;
   width: 100%;
   height: 70px;
-  background-color: teal;
+  background-color: $primary;
   color: white;
   padding: 10px;
+  #footerCopy{
+    width: 70%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  #contactInfo{
+    width: 25%;
+    display: inline-block;
+    text-align: right;
+    p{
+      margin: 0;
+    }
+  }
 }
-
-#footer #footerCopy{
-  width: 70%;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-#footer #contactInfo{
-  width: 25%;
-  display: inline-block;
-  text-align: right;
-}
-
-#footer #contactInfo p{
-  margin: 0;
-} 
